@@ -4,24 +4,40 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"> -->
-
+<script type="text/javascript" src="script/website.js"></script>
 <link rel="stylesheet" type="text/css" href="resources/css/cssheet.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 <style>
 h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
 body {font-family: "Open Sans"}
 </style>
-<body class="w3-light-grey">
 
-<!-- Navigation bar with social media icons -->
-<ul class="w3-navbar w3-black w3-hide-small">
+<body class="w3-light-grey">
+ <div id="main">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About Me</a>
+        <a href="#">Professional Experience</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+      </div>
+      
+      <!-- Use any element to open the sidenav -->
+      <!-- <span onclick="openNav()">open</span> -->
+      
+<ul class="icon-bar">
+    <li onclick="openNav()"><div></div>
+      <div></div>
+      <div></div></li>
   <li><a href="https://www.facebook.com/michelle.wang.10004694"><i class="fa fa-facebook-official"></i></a></li>
   <li><a href="https://www.instagram.com/michellewangzz/"><i class="fa fa-instagram"></i></a></li>
   <li><a href="https://www.linkedin.com/in/xiaoxiao-wang-a28113140/"><i class="fa fa-linkedin"></i></a></li>
-   <li><a href="https://github.com/MichelleXiaoxiaoWang/michellexiaoxiaowang.github.io"><i class="fa fa-github"></i></a></li>
-  <!-- <li class="w3-right"><a href="#"><i class="fa fa-search"></i></a></li> -->
+  <li><a href="https://github.com/MichelleXiaoxiaoWang/michellexiaoxiaowang.github.io"><i class="fa fa-github"></i></a></li>
+ 
 </ul>
   
 <!-- w3-content defines a container for fixed size centered content, 
@@ -172,45 +188,11 @@ and is wrapped around the whole page content, except for the footer in this exam
       <!-- About Card -->
       <div class="w3-white w3-margin">
         <div class="w3-container w3-black">
-          <h4>Xiaoxiao</h4>
+          <h4>About Me</h4>
           <p>Hello to people who does not know me! My name is Xiaoxiao Wang ( you can call me Michelle if that is more convenient ). I am currently a sophomore in Uiversity of Waterloo, and I major in Computer Engineering. If you are interested in knowing more about me, then just explore this website! I hope everyone has a wonderful life!</p>
         </div>
       </div>
       <hr>
-
-      <!-- Posts -->
-      <!--<div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>Popular Posts</h4>
-        </div>
-        <ul class="w3-ul w3-hoverable w3-white">
-          <li class="w3-padding-16">
-            <img src="/w3images/avatar_smoke.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">Denim</span>
-            <br>
-            <span>Sed mattis nunc</span>
-          </li>
-          <li class="w3-padding-16">
-            <img src="/w3images/bandmember.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">Sweaters</span>
-            <br>
-            <span>Praes tinci sed</span>
-          </li>
-          <li class="w3-padding-16">
-            <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">Workshop</span>
-            <br>
-            <span>Ultricies congue</span>
-          </li>
-          <li class="w3-padding-16">
-            <img src="/w3images/avatar_smoke.jpg" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:50px">
-            <span class="w3-large">Trends</span>
-            <br>
-            <span>Lorem ipsum dipsum</span>
-          </li>
-        </ul>
-      </div>
-      <hr>-->
 
       <!-- Advertising -->
       <div class="w3-white w3-margin">
@@ -260,20 +242,6 @@ and is wrapped around the whole page content, except for the footer in this exam
         </div>
       </div>
       <hr>
-      
-      <!-- Subscribe 
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>Subscribe</h4>
-        </div>
-        <div class="w3-container w3-white">
-          <p>Enter your e-mail below and get notified on the latest blog posts.</p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
-          <p><button type="button" class="w3-btn-block w3-padding w3-red w3-opacity w3-hover-opacity-off">Subscribe</button></p>
-        </div>
-      </div> -->
-
-    <!-- END About/Intro Menu -->
     </div>
 
   <!-- END GRID -->
@@ -282,18 +250,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 <!-- END w3-content -->
 </div>
 
-<!-- Subscribe Modal 
-<div id="subscribe" class="w3-modal w3-animate-opacity">
-  <div class="w3-modal-content w3-padding-jumbo">
-    <div class="w3-container w3-white">
-      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-xlarge w3-closebtn w3-hover-text-grey w3-margin"></i>
-      <h2 class="w3-wide">SUBSCRIBE</h2>
-      <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
-      <button type="button" class="w3-btn-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
-    </div>
-  </div>
-</div> -->
+
 
 <!-- Footer -->
 <footer class="w3-container w3-dark-grey w3-padding-32 w3-padding-xlarge">
@@ -319,8 +276,9 @@ function likeFunction(x) {
     x.innerHTML = "✓ Liked";
 }
 </script>
-
+</div>
 </body>
+
 </html>
 
 
